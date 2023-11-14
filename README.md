@@ -33,3 +33,10 @@ It does not deviate too much from the XChem structures bar the everting SEYYP lo
 The Dunbrack rotamer is perfectly placed for H-bonding with His21,
 but I didn't bother changing the protonation (CYS110 to CYZ, HID21 to HIE, ASP39 to ASH).
 
+## OE Rocs
+
+Multiple datasets from Enamine libraries were made and tested against the P1 hits + peptide.
+
+These were then 'redocked' with Fragmenstein and sorted by energy.
+For reactives, The distance to the reactive group was also calculated and everything with 3Å was kept.
+
