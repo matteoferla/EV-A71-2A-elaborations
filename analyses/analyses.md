@@ -39,9 +39,12 @@ So were I to enumerate the options of how cleavage sites are found
 EIF4G1 is disoreded where 2A binds, but it next to the EIF4E binding region.
 Complex of EIF4G1·EIF4E·2A shows there is some signal but it's messy.
 This is either a sticky patch or EIF4E does indeed bind allowing EIF4G1 to be cleaved.
-There is no evolutionary covariance, which could be added manually (i.e. virus and host evolve together).
+There is no evolutionary covariance, which could be added manually (i.e. virus and host evolve together),
+but there is a signal...
 
 ![binding](binding.png)
+
+> add detail
 
 ## Interactions with capsid VP4
 
@@ -76,10 +79,9 @@ So the interactions are real —it has no space otherwise—, but is weak.
 
 ![VP4-comple](images/VP4-complex.png)
 
-
 ## 7DA6 to x0310
 
-> [peptide-conned.ipynb](peptide-conned.ipynb)
+[peptide-conned.ipynb](peptide-conned.ipynb)
 
 In the first subsection of the screen hits were only found in P1, not P2.
 Some hits did flip Y89 from closed (product bound form) to open (substrate form).
