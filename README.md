@@ -27,3 +27,9 @@ The biochemists are overburdened so the structures are released piecemeal.
 | 1         | SILVR*          | JenkeScheen-A71-SILVR          | -    | SILVR (deep learning generation)                                 | Chemistry correction, RDKit only Fragmenstein placement against self, then SmallWorld and Fragmenstein | -                                                                                     | as above                                        |
 
 (*) SILVR was run by Jenke Scheen, I simply run the catalogue search onwards.
+
+## Analyses
+
+* MD run, creation of water map
+* Ligand from 7DA6 in x310 template
+* AF2 modelling
