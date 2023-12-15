@@ -1,10 +1,18 @@
 ## Dimer
 
+### Background
 In Uniprot entry B9VUU3|POLG_HE71
 there is written it may be a dimer.
 https://www.uniprot.org/uniprotkb/B9VUU3/entry#:~:text=Protease%202A-,Homodimer.,-By%20Similarity
-
 The crystal structure is monomeric, so maybe its P2 that is dimer?
+
+In the PDB:7DA6 (Chen et al. 2022) a native-like ligand is bound to a C110A protein.
+The N-terminus of the protease starts _properly_ at 8 within 2 disordered preceding residues and the N is 13Å 
+from residue 2 of C-terminus of the substrate: 3.5Å * 7 = 17Å, so the numbers roughly fit for it to be a true self-cleavage (cis), 
+unlike MPro which required homodimerisation for cleavage.
+Other structure w/ ligand is 4FVD w/ 10mer (Cai et al 2013).
+
+### Results
 
 AF2 prediction:
 
@@ -12,6 +20,28 @@ AF2 prediction:
 
 P2 (POLG_HE71:1013-1440, turquoise and coral) dimerises but 
 2A protease (teal and crimson) are not brought close together.
+
+## Motif specificity or protein-protein interactions?
+
+I double-checked some papers and the wording is vague on how "direct targeting" of host protein is achieved 
+but it is concluded by whole proteome MS (detail in next comment).
+There is very little consensus on the cleavage site: [ΦR]^G[PGAS].
+The internal motif is even more deviant. But it would make sense: it has proximity and product inhibition would cause issues.
+
+So were I to enumerate the options of how cleavage sites are found
+
+* indiscriminately —this would trigger apoptosis as that is what capsases do
+* by motif specificity
+* presented via protein-protein interaction
+
+## EIF4G1·EIF4E·2A
+
+EIF4G1 is disoreded where 2A binds, but it next to the EIF4E binding region.
+Complex of EIF4G1·EIF4E·2A shows there is some signal but it's messy.
+This is either a sticky patch or EIF4E does indeed bind allowing EIF4G1 to be cleaved.
+There is no evolutionary covariance, which could be added manually (i.e. virus and host evolve together).
+
+![binding](binding.png)
 
 ## Interactions with capsid VP4
 
@@ -47,16 +77,6 @@ So the interactions are real —it has no space otherwise—, but is weak.
 ![VP4-comple](images/VP4-complex.png)
 
 
-
-## EIF4G1·EIF4E·2A
-
-EIF4G1 is disoreded where 2A binds, but it next to the EIF4E binding region.
-Complex of EIF4G1·EIF4E·2A shows there is some signal but it's messy.
-This is either a sticky patch or EIF4E does indeed bind allowing EIF4G1 to be cleaved.
-There is no evolutionary covariance, which could be added manually (i.e. virus and host evolve together).
-
-![binding](binding.png)
-
 ## 7DA6 to x0310
 
 > [peptide-conned.ipynb](peptide-conned.ipynb)
@@ -84,7 +104,7 @@ See [simulation.ipynb](simulation.ipynb)
 
 Aim: create watermap for improved scoring
 
-Add details
+> Add details
 
 ### Position of catalytic residues
 
