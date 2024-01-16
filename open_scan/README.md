@@ -11,6 +11,8 @@ The triplicates have very small differences. They should have been on minimised 
 However, the fact that there are so many explainable mutants affecting the same residue is good.
 So triplicates may be unnecessary. But actually show that the problem is tricky.
 
+![scores](scores_scan.png)
+
 The silent mutation control: 0.6 kcal/mol MAE.
 The residue specific version was removed from the final ∆∆∆G.
 
