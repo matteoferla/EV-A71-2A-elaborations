@@ -28,7 +28,16 @@ The biochemists are overburdened so the structures are released piecemeal.
 
 (*) SILVR was run by Jenke Scheen, I simply run the catalogue search onwards.
 
+See [iteration 1/README.md](iteration%201/README.md) for details.
+
+## Scan for open state
+
+See [open_scan/README.md](open_scan/README.md) for details.
+
+In silico mutational scanning of closed and open states to find variants that favour the open state.
+
 ## Analyses
+See [analyses/README.md](analyses/README.md) for details.
 
 * MD run, creation of water map
 * Ligand from 7DA6 in x310 template
