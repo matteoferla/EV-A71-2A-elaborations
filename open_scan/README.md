@@ -9,7 +9,7 @@ PyRosetta 8Å cutoff, 5 FastRelax cycles for each mutation against open and clos
 
 The triplicates have very small differences. They should have been on minimised backrub or alt templates.
 However, the fact that there are so many explainable mutants affecting the same residue is good.
-So triplicates may be unnecessary.
+So triplicates may be unnecessary. But actually show that the problem is tricky.
 
 The silent mutation control: 0.6 kcal/mol MAE.
 The residue specific version was removed from the final ∆∆∆G.
@@ -37,10 +37,11 @@ Y89SNDQAKHF, S87DRCE, A92HYFN, T45DI, Y90RV, C110FY, G127SM, H21Q, C56I, E88P, R
 
 ## Future
 The issue is that the open conformation is not stable, so odd things happen.
-Maybe I should have done it with the native ligand or an XChem hit in place, 
-but I didn't.
-The native ligand pose is more open than the XChem hits, which has been contentious.
+Two solutions: native ligand or an XChem hit in the open form.
 The XChem hits are small and may be easily dislogged causing blow-ups.
+The native ligand pose is more open than the XChem hits, which has been contentious.
+The native ligand would prevent cheats like S87X, G127X and closers like E88P.
+It would also disfavour super-open variants.
 
 
 
