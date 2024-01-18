@@ -12,6 +12,7 @@ However, the fact that there are so many explainable mutants affecting the same 
 So triplicates may be unnecessary. But actually show that the problem is tricky.
 
 ![scores](scores_scan.png)
+![scatter](scatter_scan.png)
 
 The silent mutation control: 0.6 kcal/mol MAE.
 The residue specific version was removed from the final ∆∆∆G.
