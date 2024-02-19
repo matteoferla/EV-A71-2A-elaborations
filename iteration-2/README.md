@@ -15,6 +15,34 @@ or `OpenBabel openbabel.OBMol.PerceiveBondOrders` if not found.
 
 x0310 template (`x0310_apo.pdb`) was remade with tweaks.
 
+## Fragmenstein
+
+Analogues of 2 and 3 way mergers gave a lot of catalogue virtual compounds. 250k.
+75,322 were accepted by Fragmenstein.
+16,189 had a negative multifactor score.
+13,554 have a Tanimoto similarity of 0.8 or less to any other.
+
+Curiously, the deeper part of the P1 sidechain pocket is populated by better ∆G compounds.
+
+    [('hbond', 'SER', 105),
+     ('hydroph_interaction', 'VAL', 124),
+     ('halogenbond', 'SER', 105),
+     ('hbond', 'VAL', 124),
+     ('halogenbond', 'VAL', 124)]
+
+The multifactor score does a weird split:
+
+![img.png](images/dG-pocket.png)
+
+Therefore, I will submit two datasets.
+
+![img.png](images/atS105.png)
+
+About crossing to the upstream pocket, only three compounds do this
+(`PV-004088162110`,  `Z1715535807`, `Z1607665206`)
+![img.png](images/upstream.png)
+
+
 ## Rocs
 Multiple ROCS runs were performed with the following datasets:
 
