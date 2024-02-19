@@ -34,14 +34,38 @@ The multifactor score does a weird split:
 
 ![img.png](images/dG-pocket.png)
 
-Therefore, I will submit two datasets.
+Ad actually I want S105 + V124, so I will submit two datasets.
 
 ![img.png](images/atS105.png)
+
+The outliers are many.
+A conservative penalty was also tried with Butina clustering with a 0.7 threshold (Morgan, 3, 2048):
+
+|                               |   default | conservative |
+|:------------------------------|----------:|-------------:|
+| ∆∆G                           |      1    |            1 |
+| N rotatable bonds             |      1    |            1 |
+| strain per HA                 |      1    |            1 |
+| interaction uniqueness metric |     -2.5  |            0 |
+| N unconstrained atoms         |      0.2  |         0.25 |
+| N constrained atoms           |     -0.05 |         -0.5 |
+| N interactions                |     -1.5  |         -0.5 |
+| N interactions lost           |      2    |            2 |
+| max hit Tanimoto              |     -0.5  |         -0.5 |
+| N PAINS                       |      5    |            5 |
+
+This changes the dataset substantially:
+
+![img.png](images/con_scatter.png)
+
+The compounds are small and as a result there's a lot of variation on the indole ring theme,
+while the all cluster in the P1 pocket.
+
+![img.png](images/con.png)
 
 About crossing to the upstream pocket, only three compounds do this
 (`PV-004088162110`,  `Z1715535807`, `Z1607665206`)
 ![img.png](images/upstream.png)
-
 
 ## Rocs
 Multiple ROCS runs were performed with the following datasets:

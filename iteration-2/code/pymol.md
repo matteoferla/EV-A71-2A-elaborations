@@ -1,5 +1,6 @@
 set all_states, 1
 color white, polymer and element C
+hide sticks, element H
 
 color 0xF8766D, resn UNK and state 0 and element C
 color 0xF67963, resn UNK and state 1 and element C
