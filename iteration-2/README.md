@@ -67,6 +67,10 @@ About crossing to the upstream pocket, only three compounds do this
 (`PV-004088162110`,  `Z1715535807`, `Z1607665206`)
 ![img.png](images/upstream.png)
 
+Only Z1607665206 is decent, but boring:
+
+![img.png](images/Z1607665206.png)
+
 ## Rocs
 Multiple ROCS runs were performed with the following datasets:
 
@@ -81,6 +85,15 @@ But not all were brought trough to the next stage.
 Fragmenstein filtering against clashes (code/rescore_rocs/ipynb).
 
 ![img.png](images/rocs.png)
+
+## Arthorian Quest
+
+A pyrone or a pyridone may be good, but don't seem elaboratable. So halo-pyridine is the ticket.
+
+The sulfonamide in x0719 is very nice. However, it lacks the aza H-acceptor
+and the para substituent may be better as a halogen.
+That is `Z3826729512`. Although a indane-like ring is also interesting (`Z5401297840`).
+For elaborability, `Z3502193859` (sulfodiamide) might be an option for some reason.
 
 ## Footnote
 
