@@ -41,18 +41,20 @@ Ad actually I want S105 + V124, so I will submit two datasets.
 The outliers are many.
 A conservative penalty was also tried with Butina clustering with a 0.7 threshold (Morgan, 3, 2048):
 
-|                               |   default | conservative |
-|:------------------------------|----------:|-------------:|
-| ∆∆G                           |      1    |            1 |
-| N rotatable bonds             |      1    |            1 |
-| strain per HA                 |      1    |            1 |
-| interaction uniqueness metric |     -2.5  |            0 |
-| N unconstrained atoms         |      0.2  |         0.25 |
-| N constrained atoms           |     -0.05 |         -0.5 |
-| N interactions                |     -1.5  |         -0.5 |
-| N interactions lost           |      2    |            2 |
-| max hit Tanimoto              |     -0.5  |         -0.5 |
-| N PAINS                       |      5    |            5 |
+|                                   |   default |   conservative |   cluster_ranked |
+|:----------------------------------|----------:|---------------:|-----------------:|
+| N_rotatable_bonds                 |      1    |           1    |             1    |
+| ∆∆G                               |      1    |           1    |             1    |
+| interaction_uniqueness_metric     |     -2.5  |           0    |             0    |
+| N_unconstrained_atoms             |      0.2  |           0.25 |             0.25 |
+| N_constrained_atoms               |     -0.05 |          -0.5  |            -0.5  |
+| N_interactions                    |     -1.5  |          -0.5  |            -0.5  |
+| N_interactions_lost               |      2    |           2    |             2    |
+| max_hit_Tanimoto                  |     -0.5  |          -0.5  |            -0.5  |
+| N_PAINS                           |      5    |           5    |             5    |
+| strain_per_HA                     |      1    |           1    |             1    |
+| intxn_cluster_rank_10             |      0    |           0    |             1    |
+| farther_distance_to_substrate_mod |      0    |           0    |             1.5  |
 
 This changes the dataset substantially:
 
@@ -92,7 +94,7 @@ A pyrone or a pyridone may be good, but don't seem elaboratable. So halo-pyridin
 
 The sulfonamide in x0719 is very nice. However, it lacks the aza H-acceptor
 and the para substituent may be better as a halogen.
-That is `Z3826729512`. Although a indane-like ring is also interesting (`Z5401297840`).
+That is `Z3826729512`. Although an indane-like ring is also interesting (`Z5401297840`).
 For elaborability, `Z3502193859` (sulfodiamide) might be an option for some reason.
 
 ## Footnote
