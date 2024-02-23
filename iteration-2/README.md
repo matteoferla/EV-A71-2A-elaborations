@@ -39,7 +39,9 @@ Ad actually I want S105 + V124, so I will submit two datasets.
 ![img.png](images/atS105.png)
 
 The outliers are many.
-A conservative penalty was also tried with Butina clustering with a 0.7 threshold (Morgan, 3, 2048):
+A conservative penalty was also tried with Butina clustering with a 0.7 threshold (Morgan, 3, 2048).
+
+However, the problem is that the clustering makes weaker hits look better regardless of how weak they are.
 
 |                                   |   default |   conservative |   cluster_ranked |
 |:----------------------------------|----------:|---------------:|-----------------:|
@@ -65,6 +67,14 @@ while the all cluster in the P1 pocket.
 
 ![img.png](images/con.png)
 
+A better solution is to use the cluster ranking as a penalty as many top intra-cluster compounds are not good.
+
+![img.png](images/rank.png)
+
+So when a ranking costs 1 kcal/mol, the dataset looks much more reasonable:
+
+![img.png](images/rank-weighted.png)
+
 About crossing to the upstream pocket, only three compounds do this
 (`PV-004088162110`,  `Z1715535807`, `Z1607665206`)
 ![img.png](images/upstream.png)
@@ -72,6 +82,8 @@ About crossing to the upstream pocket, only three compounds do this
 Only Z1607665206 is decent, but boring:
 
 ![img.png](images/Z1607665206.png)
+
+
 
 ## Rocs
 Multiple ROCS runs were performed with the following datasets:
