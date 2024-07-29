@@ -8,7 +8,9 @@ The compounds are to be made on the robot.
 The P1 residue of the substrate is an arginine.
 The arginine’s guanidine in PDB:7DA6 (mustard) is in what would be a cryptic pocket in our system.
 The hit that comes closest is x1431 (turquoise), with a difluoromethyl substituent, but is not quite there.
+
 ![img.png](images/native-P1.png)
+
 Ryan has inspected the structure in Coot and says to be weary of PDB:7DA6.
 However, that is what binds there: a positively charged delocalised group.
  
@@ -20,24 +22,31 @@ However, this is not clear cut and universal, hence this investigation into what
 ### Benzyl note
 A parenthesis needs to be raised for the covalent series.
 These are vinyl phenyl ketone derivatives and the benzo group is on the other side of most aza-bicyclics.
+
 ![img.png](images/covalent-benzo.png)
+
 Whether a pyrazole/indole version of a carbazole works is a moot point as I was unable to find a BB.
+
 ![img.png](images/carbazole.png)
  
 ### Counter to the trend
 However, not all fragments that obey the pattern bind.
 One interest case is x1209a, which does not bind in the pocket. One explanation could be that the methyl group is important. x1209 and x1180 are a 2-bromo-imidazole and a 2-chloro-imidazole that bind there, whereas no carryover imidazole (Ni-NTA) was found, so a hydrophobic group there may be important. 
- ![img.png](images/counter-trend.png)
+
+![img.png](images/counter-trend.png)
 
 In fact, the closest thing to an except is an oxygen in the benzodioxole of x0351, which was a hit flagged as problematic. 
 In addition to carbon, chloro, floro, bromo, a nitrile group is present in x1169 (cyano-oxazole).
 Methyl, but not ethyl or larger as it’s a snug pocket —unless opened (cf. covalents).
- ![img.png](images/snug.png)
+
+![img.png](images/snug.png)
 
 Under this hypothesis, two compounds ought to have bound, but did however, Z’4612 is one of those compounds that was in the Enamine 860 version of the DSiPoised and not the original, so might be absent in XChem’s version.
- ![img.png](images/exception.png)
+
+![img.png](images/exception.png)
 
 Without running MD, the predicts are too unreliable:
+
 ![img.png](images/random-numbers.png)
 
 A note in point is that methyl group of x0487 (pyridine) cannot be changed to Br or Cl according to Fragmenstein (+4 kcal/mol), but the score are too inconsistent.
@@ -57,6 +66,7 @@ x0365 (turquoise) is an interesting hit, it **extends past the pocket** and wrap
 Proline on a turn is not mutatable, so this compound might be worth exploring, but is antisocial in respect to the pyrazole scaffold. It contains a N-phenylmethyl substituent on the amine. Changing the bridging amine to an amide opens up more options, but breaks the angle, so adding a carbon and changing to a morpholino or oxane allows a reactive bromine. The benzene is not forming aromatic interactions, just shielding the proline/glutamate sidechain, so should be better.
 * As is, bromine will act as an EWG so may change the properties of the pyrazole and might form interactions with cysteine…
 * Suzuki reaction or buckwald-Hartwig variant
+
 ![img.png](images/curveball.png)
 
 ### Choices
@@ -226,7 +236,9 @@ but is cheaper and is less greasy.
 ### From hits
 
 In the direction of the tyrosine, there are the following:
+
 ![img.png](images/from-hits1.png)
+
 Hit x0310 when decomposed, gives nitroloacetic acid as a synthon, which not available (for obvious reasons).
 
 Of the compounds that bound towards S1', these are:
