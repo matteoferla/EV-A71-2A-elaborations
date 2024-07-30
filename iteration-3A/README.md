@@ -19,6 +19,8 @@ and filtered by which worked with as a methyl-amide,
 which gave 42 compounds (second table), which seem to converge on a cinnamic acid theme,
 which is not great for drug metabolism, but we can fix that, once we get activity.
 
+> This has only Enamine caboxylic acid VS, see future for possible variations (hence the `3D`)
+
 ### P1 pocket
 
 ### Native
