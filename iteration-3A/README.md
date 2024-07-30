@@ -1,6 +1,23 @@
 ## Iteration 3
-This iteration does not have to be done automated, but I can design the compounds rationally.
-The compounds are to be made on the robot.
+
+### Summary
+This iteration does not have to be done automated,
+but I can explore catalogue space and make hypotheses from there.
+The compounds are to be made on the robot, ie. they need to be the starting compounds.
+
+In this set, the starting compounds were identified as amine on th P1 sidechain pocket binding aza-arenes.
+Due to the hydrophobicity of the pocket and the lack of helpful hits docking was done to find candidate carboxylic compounds
+to react with these.
+The native substrates residue #1 (arginine) binds to a pocket where
+most hits went and all of the elebarations that stuck where,
+the latter were N-methyl-pyrazoles,
+so I tried to look for compounds that had a reaction group and only amine came back, 
+so I worked from that (first table).
+Given the amine (arylamine) focus, 
+I made a deck of Enamine BB mono-carboxylic acid compounds under €200 and docked them, 
+and filtered by which worked with as a methyl-amide, 
+which gave 42 compounds (second table), which seem to converge on a cinnamic acid theme,
+which is not great for drug metabolism, but we can fix that, once we get activity.
 
 ### P1 pocket
 
@@ -17,7 +34,7 @@ However, that is what binds there: a positively charged delocalised group.
 ### Trend
 There is a trend of an acceptor nitrogen, 
 especially on a N-aryl-pyrazole scaffold for this P1 sidechain pocket thanks to a SER105 hydroxyl interaction. 
-However, this is not clear cut and universal, hence this investigation into what does work.
+However, this is not clear-cut and universal, hence this investigation into what does work.
 
 ### Benzyl note
 A parenthesis needs to be raised for the covalent series.
@@ -100,6 +117,8 @@ albeit outside the substrate envelope.
 
 The `x0365` hit also expands past the pocket as discussed.
 `Z1584103330` is a morpholino variant —unfortunately it is "meta"-bromo.
+I could email to find out if Enamine could make an aminated version,
+but for now I don't know if it binds.
 This can be stripped down to `EN300-6250895` (carboxylic acid).
 Where the above compounds success, `CSC016220088` is the base carboxylic acid with amine,
 but would require protection chemistry. The pyridine version is `CSC015835723`.
@@ -250,3 +269,11 @@ which are an odd bunch.
 One option would be to merge the decomposed fragments in the correct location (cf. `not-pocket.sdf`)
 with the carboxylic acid, but there are few hits with not clear logic
 (i.e. possibly water mediated).
+
+## Future
+
+Further work could involve:
+
+* Mcule and Life Chemicals carboxylic acid decks.
+* Decks for reductive amination —need to find out what specific reaction has been tested (e.g. Lewcart–Wallach reaction, Mannich reaction etc.) and if it's okay with arylamines
+* boronic acid deck -> Chan–Lam reaction (on arylamine) Suzuki (on chloro-arene, requires discussion with Enamine)
